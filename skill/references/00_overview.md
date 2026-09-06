@@ -15,6 +15,9 @@
 | references/02_six_gates_aesthetics.md | 六维门控+克制美学+红线 | 每次创作/修改 |
 | references/03_dialogue_engine.md | 台词引擎+十要十不要 | 写台词/改台词 |
 | references/09_style_modules.md | 短剧/洗稿/分镜速查 | 对应类型任务 |
+| references/10_story_structure.md | 结构与节奏知识（叙事框架） | Step2 梗概/Step4 大纲前加载 |
+| references/11_visual_language.md | 视听语言知识（视听转换） | Step7 初稿写作按此视听化+格式 |
+| references/12_character_dialogue.md | 人物与对白知识（血肉填充） | Step3 人物小传前加载/续写必读 |
 
 ## 质检资产（监察者）
 | 文件 | 内容 | 何时加载 |
@@ -54,6 +57,7 @@
 - data/logs/：心跳/进化/回归日志
 
 ## 创作引用顺序建议
-创作任务：01 → 02 → 03（穿插）→ 交付前 04/08 监察。
+创作任务：01 → 10 → 12 → 02 → 03 → 11（穿插）→ 交付前 04/08 监察。
+（01 起流程 → 10 立结构 → 12 立人物 → 02 过审美 → 03 写台词 → 11 视听化与格式 → 交付前 04/08 监察。）
 审核任务：08 → 04（命中时）。
 记忆/维护：05/06/07。
