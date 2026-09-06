@@ -47,26 +47,26 @@ def run_tool_checks():
     failures = []
     # errorbook_check demo
     p = subprocess.run([sys.executable, os.path.join(ROOT, "tools", "errorbook_check.py"), "demo"],
-                       capture_output=True, text=True, timeout=30)
+                       capture_output=True, text=True, encoding="utf-8", errors="replace", timeout=30)
     if p.returncode != 0:
         failures.append("errorbook_check demo 失败: " + p.stderr[-300:])
     # heartbeat
     state = os.path.join(ROOT, "data", "logs", "smoke-heartbeat-state.json")
     p = subprocess.run([sys.executable, os.path.join(ROOT, "tools", "heartbeat.py"),
-                        "--state", state], capture_output=True, text=True, timeout=30)
+                        "--state", state], capture_output=True, text=True, encoding="utf-8", errors="replace", timeout=30)
     if p.returncode != 0 or "HEARTBEAT" not in p.stdout:
         failures.append("heartbeat 失败: " + p.stdout[-200:] + p.stderr[-200:])
     # memory add + search（无 embedding 自动退化关键词）
     mem_root = os.path.join(ROOT, "data", "memory")
     p = subprocess.run([sys.executable, os.path.join(ROOT, "tools", "memory_store.py"),
                         "--root", mem_root, "add", "warm", "smoke_test", "冒烟测试条目 红绳 离别 台词"],
-                       capture_output=True, text=True, timeout=30)
+                       capture_output=True, text=True, encoding="utf-8", errors="replace", timeout=30)
     if p.returncode != 0:
         failures.append("memory add 失败: " + p.stderr[-300:])
     else:
         p2 = subprocess.run([sys.executable, os.path.join(ROOT, "tools", "memory_store.py"),
                              "--root", mem_root, "search", "红绳 离别", "--top", "1"],
-                            capture_output=True, text=True, timeout=30)
+                            capture_output=True, text=True, encoding="utf-8", errors="replace", timeout=30)
         if p2.returncode != 0 or "smoke_test" not in p2.stdout:
             failures.append("memory search 失败: " + p2.stdout[-200:] + p2.stderr[-200:])
     return failures
