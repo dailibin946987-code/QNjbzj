@@ -16,3 +16,9 @@
 {"event": "degraded", "ts": 1788712683.753896, "agent": "script-agent", "missed": 1}
 {"event": "offline", "ts": 1788712683.95775, "agent": "script-agent", "missed": 2}
 {"event": "recovered", "ts": 1788712683.95775, "agent": "script-agent", "ok": true}
+{"event": "degraded", "ts": 1788716863.0989747, "agent": "script-agent", "missed": 1}
+{"event": "offline", "ts": 1788716863.3163254, "agent": "script-agent", "missed": 2}
+{"event": "recovered", "ts": 1788716863.3163254, "agent": "script-agent", "ok": true}
+{"event": "degraded", "ts": 1788716863.5189788, "agent": "script-agent", "missed": 1}
+{"event": "offline", "ts": 1788716863.721757, "agent": "script-agent", "missed": 2}
+{"event": "recovered", "ts": 1788716863.7222602, "agent": "script-agent", "ok": true}
