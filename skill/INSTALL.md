@@ -22,7 +22,7 @@ AIGC:
    （八机制协议 + 六角色体系 + 任务路由 + 创作主流程）
 2. 阅读索引：D:\D_AIdirector\QNjbzj\skill\references\00_overview.md
    （按需加载 references，不必全文常驻上下文）
-3. 创作任务按需加载 references（建议顺序 01 → 10 → 13 → 12 → 02 → 03 → 11）：
+3. 创作任务按需加载 references（建议顺序 01 → 10 → 13 → 12 → 02 → 03 → 11 → 14）：
    - 01_ly_jbkf_workflow.md      七步流水线+门控（起流程）
    - 10_story_structure.md       结构与节奏（Step2 梗概/Step4 大纲前）
    - 13_genre_grammar.md         剧作知识图谱与类型学（经典理论+番剧爆点语法+台词降噪）
@@ -30,7 +30,8 @@ AIGC:
    - 02_six_gates_aesthetics.md  六维门控+克制美学+红线（审美把关）
    - 03_dialogue_engine.md       台词引擎+十要十不要（写台词/改台词）
    - 11_visual_language.md       视听语言（Step7 初稿写作按此视听化+格式）
-4. 交付前自检：加载 04_errorbook_E01-E13.md（错题本断言）+ 08_review_dimensions.md（审核门控），
+   - 14_plain_descriptive_writing.md 白描协议（写稿每段自查，去 AI 味）
+4. 交付前自检：加载 04_errorbook.md（错题本断言）+ 08_review_dimensions.md（审核门控），
    通过才交付；不通过回炉至多 2 轮。
 5. 执行创作时扮演总导演编排六个角色（导演/主笔/监察者/记忆官/进化官/心跳官）；
    心跳/记忆/进化协议分别走 references/06、05、07。
@@ -46,7 +47,7 @@ AIGC:
 ## 二、装载后自测（3 问）
 
 1. 是否已读 SKILL.md 并掌握八机制协议与六角色体系？
-2. 创作任务是否知道按 00_overview 建议顺序加载 01/10/13/12/02/03/11？
+2. 创作任务是否知道按 00_overview 建议顺序加载 01/10/13/12/02/03/11/14？
 3. 交付前是否记得跑 04/08 监察（错题断言 + 审美门控）？
 
 3 问全过即视为装载成功，可开始创作/审核任务；任一不过则回读对应文件。

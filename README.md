@@ -33,15 +33,15 @@ QNjbzj/
 ├── skill/                   全能剧本专家知识包（宿主无关，纯文本协议）
 │   ├── SKILL.md             包入口：八机制协议 + 六角色 + 大脑模式桥接 + 路由
 │   ├── agents/              六角色协议（导演/主笔/监察者/记忆官/进化官/心跳官）
-│   ├── references/          方法论资产（七步流水线/六维审美/台词引擎/错题本 E-01~E-13/记忆/心跳/进化/审核/风格路由/索引）
+│   ├── references/          方法论资产（七步流水线/六维审美/台词引擎/错题本 E-01~E-14/记忆/心跳/进化/审核/风格路由/索引）
 │   └── templates/           输出模板（剧本格式/审核报告/回归报告）
 ├── tools/                   机器校验与增强工具（宿主有 exec 时挂载，标准库免依赖）
 │   ├── llm_client.py        OpenAI 兼容 LLM 调用（本地 Ollama 等，local-llm 大脑）
 │   ├── memory_store.py      只增记忆 + 可选 embedding 检索
-│   ├── errorbook_check.py   错题本断言执行器（内置 E-01~E-13 精简版）
+│   ├── errorbook_check.py   错题本断言执行器（内置 E-01~E-14 精简版）
 │   └── heartbeat.py         心跳自检脚本（保守保洁，只增不删）
 ├── tests/
-│   ├── cases/              回归用例（YAML：从错题本 E-01~E-13 提炼的可执行断言）
+│   ├── cases/              回归用例（YAML：从错题本 E-01~E-14 提炼的可执行断言）
 │   └── fixtures/           测试夹具（输出样例）
 ├── data/                   运行时数据（errors/anchors/snapshots/logs/memory，按只增原则写入）
 ├── examples/
@@ -69,7 +69,7 @@ demo 会演示：
 
 工具脚本（任意宿主可复用）：
 ```powershell
-python tools\errorbook_check.py check "台词文本"   # 错题断言（E-01~E-13）
+python tools\errorbook_check.py check "台词文本"   # 错题断言（E-01~E-14）
 python tools\heartbeat.py                          # 心跳自检
 python tools\memory_store.py add permanent anchors "P001|规则" --note 来源
 python tools\llm_client.py --list                  # 探测本地 Ollama

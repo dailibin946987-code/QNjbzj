@@ -24,7 +24,7 @@
 ## 质检资产（监察者）
 | 文件 | 内容 | 何时加载 |
 |---|---|---|
-| references/04_errorbook_E01-E13.md | 错题本全量+防回退 | 每次交付前扫描 |
+| references/04_errorbook.md | 错题本全量+防回退（E-01~E-14） | 每次交付前扫描 |
 | references/08_review_dimensions.md | 七维/六维/导演审核标准 | 审核任务 |
 
 ## 运行机制资产（记忆/心跳/进化）
@@ -46,7 +46,7 @@
 |---|---|
 | tools/llm_client.py | OpenAI 兼容 LLM 调用（本地 Ollama 等），local-llm 大脑 |
 | tools/memory_store.py | 只增记忆+可选 embedding 检索 |
-| tools/errorbook_check.py | 错题本断言执行（内置 E-01~E-13 精简版 + json 用例） |
+| tools/errorbook_check.py | 错题本断言执行（内置 E-01~E-14 精简版 + json 用例） |
 | tools/heartbeat.py | 心跳自检脚本（保守保洁，只增不删） |
 
 > 注：tools/ 位于工程根目录 D:\D_AIdirector\QNjbzj\tools\，与 skill/ 知识包解耦，可独立复用；宿主无 exec 能力时由对应角色按本包协议人工执行，语义等价。

@@ -22,9 +22,12 @@ REQUIRED_SKILL_FILES = [
     "agents/memory-agent.md", "agents/evolution-agent.md", "agents/heartbeat-agent.md",
     "references/00_overview.md", "references/01_ly_jbkf_workflow.md",
     "references/02_six_gates_aesthetics.md", "references/03_dialogue_engine.md",
-    "references/04_errorbook_E01-E13.md", "references/05_memory_protocol.md",
+    "references/04_errorbook.md", "references/05_memory_protocol.md",
     "references/06_heartbeat_protocol.md", "references/07_evolution_protocol.md",
     "references/08_review_dimensions.md", "references/09_style_modules.md",
+    "references/10_story_structure.md", "references/11_visual_language.md",
+    "references/12_character_dialogue.md", "references/13_genre_grammar.md",
+    "references/14_plain_descriptive_writing.md",
     "templates/screenplay-format.md", "templates/review-report.md",
     "templates/regression-report.md",
 ]
